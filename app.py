@@ -23,7 +23,6 @@ def main():
 
 def cs_sidebar():
     st.sidebar.header("Streamlit cheat sheet")
-    st.sidebar.code("$ pip install streamlit")
 
     return None
 
