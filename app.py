@@ -39,13 +39,10 @@ def cs_body():
     col1, col2, col3 = st.columns(3)
 
     col1.subheader("Magic commands")
-    col1.code("""hello""")
 
     col2.subheader("Control flow")
-    col2.code("""hello""")
 
     col3.subheader("Mutate data")
-    col3.code("""hello""")
 
     return None
 
