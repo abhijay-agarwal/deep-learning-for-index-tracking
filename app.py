@@ -19,16 +19,18 @@ def main():
 def cs_body():
     # Magic commands
 
-    col1, col2, col3 = st.columns(3)
+    # col1, col2 = st.columns(1)
 
-    col1.subheader("Magic commands")
-    col1.code(
-        """# Magic commands implicitly `st.write()`
-        \'\'\' _This_ is some __Markdown__ \'\'\'
-        a=3
-        'dataframe:', data
-        """
-    )
+    # col1.subheader("Magic commands")
+    # col1.code(
+    #     """# Magic commands implicitly `st.write()`
+    #     \'\'\' _This_ is some __Markdown__ \'\'\'
+    #     a=3
+    #     'dataframe:', data
+    #     """
+    # )
+
+    st.text("This is some text")
 
     return None
 
