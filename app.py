@@ -1,24 +1,3 @@
-"""
-Streamlit Cheat Sheet
-
-App to summarise streamlit docs v1.8.0
-
-There is also an accompanying png and pdf version
-
-https://github.com/daniellewisDL/streamlit-cheat-sheet
-
-v1.8.0 October 2021
-
-Author:
-    @daniellewisDL : https://github.com/daniellewisDL
-
-Contributors:
-    @arnaudmiribel : https://github.com/arnaudmiribel
-    @akrolsmir : https://github.com/akrolsmir
-    @nathancarter : https://github.com/nathancarter
-
-"""
-
 import streamlit as st
 from pathlib import Path
 import base64
@@ -39,20 +18,12 @@ def main():
     return None
 
 
-# Thanks to streamlitopedia for the following code snippet
-
-
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-
-
 # sidebar
 
 
 def cs_sidebar():
     st.sidebar.header("Streamlit cheat sheet")
+    st.sidebar.code("$ pip install streamlit")
 
     return None
 
@@ -68,10 +39,13 @@ def cs_body():
     col1, col2, col3 = st.columns(3)
 
     col1.subheader("Magic commands")
+    col1.code("""hello""")
 
     col2.subheader("Control flow")
+    col2.code("""hello""")
 
     col3.subheader("Mutate data")
+    col3.code("""hello""")
 
     return None
 
